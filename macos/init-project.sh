@@ -7,7 +7,9 @@ if ! command -v composer &> /dev/null
 then
     echo "Composer is not installed."
     echo "Setting up basic dev env..."
-    sh <(curl -s 'https://raw.githubusercontent.com/lenmic/php-dev-env/refs/heads/main/macos/dev-env.sh')
+
+    # Download the script dev-env.sh and execute it
+    curl -s 'https://raw.githubusercontent.com/lenmic/php-dev-env/refs/heads/main/macos/dev-env.sh' | bash
 
     # Move Composer to bin directory
     cp composer.phar /usr/local/bin/composer
