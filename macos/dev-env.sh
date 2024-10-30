@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Setting up development environment..."
+echo "Basic requirements: Homebrew, PHP, Git, Composer, Docker."
+
 # Check if Homebrew is installed
 if ! command -v brew &> /dev/null
 then
@@ -76,4 +79,4 @@ fi
 # Install composer dependencies
 # composer install
 
-
+echo "Development environment setup complete."
