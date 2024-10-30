@@ -13,5 +13,5 @@ sh <(curl -s 'https://raw.githubusercontent.com/lenmic/php-dev-env/refs/heads/ma
 ### Initialize a project
 
 ```
-sh <(curl -s 'https://raw.githubusercontent.com/lenmic/php-dev-env/refs/heads/main/macos/init-project.sh')
+sh <(curl -s -H 'Cache-Control: no-cache' 'https://raw.githubusercontent.com/lenmic/php-dev-env/refs/heads/main/macos/init-project.sh')
 ```
